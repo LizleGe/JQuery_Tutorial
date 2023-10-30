@@ -1,0 +1,180 @@
+
+/*The styling of the body*/
+body{
+    background-color: rgb(33, 29, 54);  /*The background of the body, the webpages colour*/
+}
+
+/*The styling of the h1 header of all the html pages*/
+h1{
+    font-size: 26px;    /*The Font size*/
+    line-height: 32px;  /*The vertical spacing between lines of texts*/
+    color: #ffffff; /*The font colour*/
+    font-family: Roboto;    /*The font Roboto is used*/
+    font-weight: 600;   /*The weight of the font, semi bold*/
+    text-transform: uppercase; /*The letters are changed to capital*/
+}
+
+/*The styling of all the h2 headers of the html pages*/
+h2{
+    font-size: 24px;    /*The Font size*/
+    color: #fcfcfc; /*The font colour*/
+    font-family: Roboto;    /*The font Roboto is used*/
+    font-weight: bold;  /*The font is in bold*/
+    margin-top: 80px;   /*An additional 80px is added to the top margin of the h2 heading*/
+    margin-bottom: 5px; /*An additional 5px is added to the bottom margin of the h2 heading*/
+    text-align: center; /*The text are alligned centrally*/
+}
+
+/*The styling of all the h3 headers of the html pages*/
+h3{
+    font-size: 16px;    /*The Font size*/
+    color: #fcfcfc; /*The font colour*/
+    font-family: Roboto;    /*The font Roboto is used*/
+    font-weight: bold;  /*The font is in bold*/
+}
+
+/*The styling for all paragraphs in the html pages*/
+p{
+    font-size: 20px;    /*The Font size*/
+    line-height: 18px;  /*The vertical spacing between lines of texts*/
+    color: #000000; /*The font colour*/
+    font-family: Roboto;    /*The font Roboto is used*/
+  
+}
+
+/*The styling of the a href*/
+a{
+    cursor: pointer;    /*The style of the curser, which is a pointer (a little hand)*/
+    font-size: 20px;    /*The Font size*/
+    line-height: 18px;  /*The vertical spacing between lines of texts*/
+    color: #000000; /*The font colour*/
+    font-family: Roboto;    /*The font Roboto is used*/
+    font-weight: bold;  /*The font is in bold*/
+}
+
+/*The styling of the main_header*/
+.main_header{
+    
+    position: fixed; /*position of header is fixed */
+    top: 0; /*the header is positioned at top of the viewport*/
+    width: 100%;    /*The width is 100% of the viewport width*/
+    height: 60px;   /*The height of main_header is set to 60px*/
+    background-color: rgb(255, 255, 255);   /*The background colour of the main_header*/
+    display: flex; /*The layout is used by the flexbox*/
+    justify-content: space-between; /*The elements are spaced out evenly throughout the main header*/
+    z-index: 1000; /*The stacking order is controlled by setting the z-index to 1000*/
+}
+
+/*The styling of the main_header_logo*/
+.main_header_logo{
+    width: fit-content; /*The width of the element will adjust to fit the content it contains*/
+    height: 100%;   /*The height is 100% of its parent container's height*/
+    display: flex;  /*The layout is used by the flexbox*/
+}
+
+/*The styling of main_header_logo, the jQuary picture*/
+.main_header_logo img{
+    height: 60px;   /*The height of the picture, logo*/
+    align-self: center; /*The image gets vertically centered within its container*/
+}
+
+/*The styling of the main_header_nav */
+.main_header_nav{
+    width: fit-content; /*The width of the element will adjust to fit the content it contains*/
+    height: 100%;   /*The height is 100% of its parent container's height*/
+}
+
+/*The styling for the .main_header_nav ul */
+.main_header_nav ul{
+    list-style: none;   /*The default list style is removed*/
+    margin-left: 30px;  /*A left margin (30px) is added to the Ul(Unordered list)*/   
+}
+
+/*The styling for the main_header_nav ul li */
+.main_header_nav ul li{
+    display: inline; /*Items will be displayed inline appearing horizontally*/
+    float: left; /*The items within their container will float to the left*/
+}
+
+/*The styling of the main_header_nav ul li a */
+.main_header_nav ul li a{
+    padding: 0 10px;    /*The padding will be added to left and right of the block. 10px left and right and 0px top and bottom*/
+    font-family:'Roboto', sans-serif;  /*The font Roboto is used*/
+    line-height: 60px;   /*The vertical spacing between lines of texts*/
+    display: block; /*changed to a block, the display is a block.*/
+    height: 100%; /*The height is 100% of its parent container's height*/
+}   
+
+/*The styling of the "main_header_nav ul li a"*/
+.main_header_nav ul li a:hover{
+    color: rgb(255, 0, 0);  /*The colour that the text will be once the cursor moves above it.*/
+} 
+
+/*The styling for the main_header_w3schools*/
+.main_header_w3schools{
+    width: fit-content; /*The width of the element will adjust to fit the content it contains.*/
+    height: 100%;   /*The height of the logo, image*/
+    padding-right: 60px;    /*60px of padding is added to the right of the logo*/
+    display: flex;  /*The flexbox is used for the layout of the elements*/
+    align-items: center;    /*The content will be vertically centered within the flex container*/
+}
+
+/*The styling for the main_header_w3schools_logo */
+.main_header_w3schools_logo{
+    width: 20px;    /*The width of the logo, image*/
+    height: 20px;   /*The height of the logo, image*/
+    background-image: url(../img/W3Schools.png);    /*The image of the w3schools logo on the left*/
+    background-repeat: no-repeat;   /*The background image will not repeat*/
+    background-size: cover; /*The entire element will be cover by the image*/
+    cursor: pointer;    /*The style of the curser, which is a pointer (a little hand)*/
+    background-color: #fff; /*The background colour of the image*/
+}
+
+/*The styling for the "wrapper_main" */
+.wrapper_main{
+    width: 900px;   /*The wrapper_main element width is 900px*/
+}
+
+/*The styling for the home page*/
+main{
+    width: 100%; /*The width is set to 100% of its container*/
+    height: calc(100vh - 60px); /*The height is calculated by deducting 60px from the 100% view heigt*/  
+    margin-top: 60px;   /*An additional 60px is added to the top margin of the box*/
+    background-image: url(../img/background.jpg);   /*The background image*/
+    background-size: cover; /*The background image will cover the entire element, webpage*/
+    background-repeat: no-repeat;   /*This will prevent the background image from repeating*/
+    background-position: center;    /*The background image is positioned in the center*/
+    display: flex;  /*The flexbox is used for the layout of the elements*/
+    justify-content: center;    /*The content will be horizontally centered within the flex container*/
+    align-items: center;    /*The content will be vertically centered within the flex container*/   
+} 
+
+/*The styling for the main .main-intro h1 */
+main .main-intro h1{
+    font-size: 200px;   /*The Font size*/
+    line-height: 106px; /*The vertical spacing between lines of texts*/   
+}
+
+/*The styling for the "main a"*/
+main a {
+    font-size: 18px;    /*The Font size*/    
+    display: block; /*changed to a block, the display is a block.*/
+    background-color: rgb(126, 125, 125);   /*The background colour of the block*/
+    padding: 10px 20px; /*The padding will be added to left and right of the block. 20px left and right and 10px top and bottom*/
+    width: fit-content; /*The width is set such, that the content will fit within the block*/
+
+}
+
+/*The styling for the "main a" hover*/
+main a:hover{
+    color: brown;   /*The colour of the links when the cursor hovers above it*/
+}
+
+
+ 
+
+ 
+
+
+  
+

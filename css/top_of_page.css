@@ -1,0 +1,21 @@
+/*The styling for the to_top_button*/
+#to_top_button{
+    display: none; 
+    position: fixed;
+    bottom: 20px;   /* the element is 20px from the edge*/
+    right: 20px;    /*the element is 20px from the right edge*/
+    padding: 10px 20px; /*The padding around the text of the button*/
+    background-color: rgb(128, 0, 0);   /*The colour of the background of the button*/ 
+    color: #fff;    /*Colour of the font*/
+    border: none;   /*There is no border*/
+    border-radius: 5px; /*The border radius is 5px*/
+    cursor: pointer;    /*The style of the curser, which is a pointer (a little hand)*/ 
+    z-index: 999;   /*Assigning a z- index value of 999 for the stacking order purposes*/
+    font-family: 'Roboto', sans-serif;  /*The font Roboto is used*/
+    font-weight: bold;  /*The font is in bold*/
+}
+
+/*The style for the to_top_button hover effect*/
+#to_top_button:hover {
+    background-color:rgb(47, 0, 0); /*The colour once cursor moves above button*/ 
+}

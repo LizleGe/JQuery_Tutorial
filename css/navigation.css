@@ -1,0 +1,23 @@
+/*The style for the navigation class*/
+.navigation {
+    text-align: center; /* The text are centered within the boxes */
+    margin-top: 20px;   /*An additional 20px is added to the top margin of the box*/
+}
+
+/*The style for the navigation a*/
+.navigation a {
+    display: inline-block;  /*The element is shown in an inline-block*/
+    padding: 10px 20px; /*The padding around the text of the button*/
+    background-color: rgb(128, 0, 0); /*The colour of the background of the box*/
+    color: #fff; /*colour of the font*/
+    text-decoration: none; /*It removes underlines or any other decorations from texts within elements */
+    margin: 0 10px; /* Margins are added to the boxes */
+    border-radius: 5px; /*The border radius is 5px*/
+    font-family: 'Roboto', sans-serif;  /*The font Roboto is used*/
+    font-weight: bold;  /*The font is in bold*/
+}
+
+/*The style for the navigation a hover effect*/
+.navigation a:hover {
+    background-color:rgb(47, 0, 0); /*The colour once cursor moves above button*/ 
+}

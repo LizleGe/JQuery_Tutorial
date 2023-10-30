@@ -1,0 +1,112 @@
+/*The styling of all the h2 headings within example1.html page*/
+h2 {
+  font-size: 24px;  /*The Font size*/
+  color: #fcfcfc; /*The text colour*/
+  font-family: 'Roboto', sans-serif;  /*The font Roboto is used*/
+  font-weight: bold;  /*The font is in bold*/
+  margin-top: 80px; /*An additional 80px is added to the top margin of the box*/
+  margin-bottom: -75px; /*A negative -75px is added to the bottom of the margin*/
+  text-align: center; /* The text are centered within the boxes */
+}
+
+/*The style for all the boxes witin the container of the Example2.html page*/
+.container {
+  /* The child elements is arranged in a column by using the flexbox*/
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*The boxes within the container is horizontally centered*/
+  text-align: center; /* The text are centered within the boxes */
+  justify-content: center;  /*The boxes are vertically aligned within the container*/
+}
+
+/*All the styling for box1 within the Example1.html page*/
+.box1_example1 {
+  background-color: rgb(240, 238, 238); /*The colour of the background of the box*/
+  border: 10px solid rgb(128, 0, 0);  /*The colour of the border*/
+  /*The width and the height of the box*/
+  width: 550px;
+  height: 350px;
+  margin: 5px; /* Margins are added to the boxes */
+  margin-top: 80px; /*An additional 80px is added to the top margin of the box*/
+  text-align: left; /* The text are alligned to the left within the box */
+  overflow: auto; /* A scroll bar is added if content inside the box exceeds the box*/
+  font-weight: bold;  /*The font is in bold*/
+}
+
+/*All the styling for box2 within the Example1.html page*/
+.box2_example1 {
+  background-color: rgb(240, 238, 238); /*The colour of the background of the box*/
+  border: 10px solid rgb(128, 0, 0);  /*The colour of the border*/
+  /*The width and the height of the box*/
+  width: 550px;
+  height: 250px;
+  margin: 5px; /* Margins are added to the boxes */
+  margin-top: 80px; /*An additional 80px is added to the top margin of the box*/
+  text-align: left; /* The text are alligned to the left within the box */
+  overflow: auto; /* A scroll bar is added if content inside the box exceeds the box*/
+  font-weight: bold;  /*The font is in bold*/
+}
+
+/*All the styling for box3 within the Example1.html page*/
+.box3_example1 {
+  background-color: rgb(240, 238, 238); /*The colour of the background of the box*/
+  border: 10px solid rgb(128, 0, 0);  /*The colour of the border*/
+  /*The width and the height of the box*/
+  width: 550px;
+  height: 100px;
+  margin: 5px; /* Add margin between boxes */
+  margin-top: 80px; /*An additional 80px is added to the top margin of the box*/
+  text-align: center; /* The text are centered within the boxes */
+  overflow: auto; /* A scroll bar is added if content inside the box exceeds the box*/
+}
+
+/*All the styling for the ticker-container within the Example1.html page*/
+.ticker-container {
+  background-color: rgb(255, 255, 255); /*The colour of the background of the ticker-container box*/
+  overflow: hidden; /*Content that would overflow would be hidden*/
+  position: relative; /*The container position relative to its normal position*/
+  display: flex;  /*The flexbox is used for the layout*/
+  flex-direction: column; /*The child elements are stacked vertically in a column*/
+  align-items: center;  /*The boxes within the container is horizontally centered*/
+  justify-content: center; /*The boxes are vertically aligned within the container*/
+  height: 100px;  /*The height of the box*/
+  white-space: nowrap;  /*The text cannot wrap to the next line*/
+}
+
+/*All the styling for the ticker-content within the Example1.html page*/
+.ticker-content {
+  display: inline-block;
+  padding-right: 10%;  /* The first position off the screen*/
+  animation: ticker 10s linear infinite;  /* The animation duration will be adjusted as needed*/
+  font-family: 'Roboto', sans-serif;  /*The font Roboto is used*/
+  font-weight: bold;  /*The font is in bold*/
+}
+
+/*The animation which is defined as ticker*/
+@keyframes ticker {
+  0% { /* When the animation is at the beginning*/
+    transform: translateX(100%); /*The block will move 100% to the right horizontally*/
+  }
+  100% { /* When the animation is at the end*/
+    transform: translateX(-100%); /*The block will move 100% to the left horizontally*/
+  }
+}
+
+/*All the styling for startStopButton within the Example1.html page*/
+#startStopButton {
+  background-color: #ba4f8c; /*The background colour of the button*/
+  color: #fff; /*The text colour*/
+  padding: 5px 20px; /*The padding around the text of the button*/
+  font-size: 16px; /*The Font size*/
+  border: none; /*The border is removed*/
+  cursor: pointer; /* The style of the curser, which is a pointer (a little hand) */
+  font-family: 'Roboto', sans-serif; /*The font Roboto is used*/
+  font-weight: bold; /*The font is in bold*/
+  margin-top: 10px; /*An additional 10px is added to the top margin of the box*/
+  margin-bottom: 15px;  /*An additional 15px is added to the bottom of the margin*/
+}
+
+/*All the styling for startStopButton hover effect within the Example1.html page*/
+#startStopButton:hover {
+  background-color: #620b39; /* The colour to which the button will change once the pointer is hovered above it*/
+}

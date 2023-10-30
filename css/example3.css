@@ -1,0 +1,106 @@
+/*The styling of all the h2 with ID all_boxes_example3 headings within example3.html page*/
+#all_boxes_example3 {
+  font-size: 24px;  /*The Font size*/
+  color: #fcfcfc; /*The text colour*/
+  font-family: 'Roboto', sans-serif;  /*The font Roboto is used*/
+  font-weight: bold;  /*The font is in bold*/
+  margin-top: 80px; /*An additional 80px is added to the top margin of the box*/
+  margin-bottom: -75px; /*A negative -75px is added to the bottom of the margin*/
+  text-align: center; /* The text are centered within the boxes */
+}
+
+/*The style for all the boxes witin the container of the Example3.html page*/
+.container {
+  /* The child elements is arranged in a column by using the flexbox*/
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*The boxes within the container is horizontally centered*/
+  text-align: center; /* The text are centered within the boxes */
+  justify-content: center;  /*The boxes are vertically aligned within the container*/
+}
+
+/*All the styling for box1 within the Example3.html page*/
+.box1_example3 {
+  background-color: rgb(240, 238, 238); /*The colour of the background of the box*/
+  border: 10px solid rgb(128, 0, 0);  /*The colour of the border*/
+  /*The width and the height of the box*/
+  width: 550px;
+  height: 250px;
+  margin: 5px; /* Margins are added to the boxes */
+  margin-top: 80px; /*An additional 80px is added to the top margin of the box*/
+  text-align: left; /* The text are alligned to the left within the box */
+  overflow: auto; /* A scroll bar is added if content inside the box exceeds the box*/
+  font-weight: bold;  /*The font is in bold*/
+}
+
+/*All the styling for box2 within the Example3.html page*/
+.box2_example3{
+  background-color: rgb(240, 238, 238); /*The colour of the background of the box*/
+  border: 10px solid rgb(128, 0, 0);  /*The colour of the border*/
+  /*The width and the height of the box*/
+  width: 550px;
+  height: 350px;
+  margin: 5px; /* Margins are added to the boxes */
+  margin-top: 80px; /*An additional 80px is added to the top margin of the box*/
+  text-align: center; /* The text are centered within the boxes */
+  overflow: auto; /* A scroll bar is added if content inside the box exceeds the box*/
+}
+
+/*All the styling for box3 within the Example3.html page*/
+.box3_example3 {
+  background-color: rgb(240, 238, 238); /*The colour of the background of the box*/
+  border: 10px solid rgb(128, 0, 0);  /*The colour of the border*/
+  /*The width and the height of the box*/
+  width: 550px;
+  height: 200px;
+  margin: 5px; /* Add margin between boxes */
+  margin-top: 80px; /*An additional 80px is added to the top margin of the box*/
+  text-align: center; /* The text are centered within the boxes */
+  position: relative; /* Make the container relative */
+}
+
+.refresh {
+  background-color: #ba4f8c; /*The background colour of the button*/
+  color: #fff; /*The text colour*/
+  padding: 5px 20px; /*The padding around the text of the button*/
+  border: none; /*The border is removed*/
+  cursor: pointer; /*The style of the curser, which is a pointer (a little hand)*/
+  font-family: 'Roboto', sans-serif;  /*The font Roboto is used*/
+  font-weight: bold;  /*The font is in bold*/
+  font-size: 16px; /*The Font size*/
+}
+
+
+/*Style for the "Click here to fade the boxes" button*/
+.start_animation {
+  background-color: #ba4f8c; /* Background color */
+  color: #fff; /*The text colour*/
+  padding: 5px 20px; /*The padding around the text of the button*/
+  border: none; /*The border is removed*/
+  cursor: pointer; /*The style of the curser, which is a pointer (a little hand)*/
+  font-family: 'Roboto', sans-serif;  /*The font Roboto is used*/
+  font-weight: bold;  /*The font is in bold*/
+  font-size: 16px; /*The Font size*/
+}
+
+/*The style for the refresh hover effect*/
+.refresh:hover{
+  background-color: #620b39; /*The colour once cursor moves above button*/
+}
+
+/*The style for the start_animation hover effect*/
+.start_animation:hover{
+  background-color: #620b39; /*The colour once cursor moves above button*/
+}
+
+/*The style for the animation-block*/
+.animation-block {
+  /*The width and the height of the Animation-block*/
+  width: 100px;
+  height: 100px;
+  background-color: #98bf21;  /*The block colour*/
+  position: absolute; /* Position the block absolutely */
+  left: 0%; /*The block must start 0% from the left*/
+  top: 50%; /*This will allow that it would be centered*/
+  transform: translateY(-50%); /* Center it vertically */
+}

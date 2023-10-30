@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jquery Tutorial</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Below are all the CSS styling sheets that is linked to each of the pages-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--The font that is used on the website imported from googleapis.com-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/example1.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/top_of_page.css">
+
+    <!--This is Prism.js that is used to higlight the syntax, to higlight the code in colour in box 2-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--This includes the JQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    
+    
+    
+</head>
+<body>
+   <!--This is the header section-->
+    <header class="main_header">
+        <div class="main_header_logo">
+            <!--This is the link to jquery website once you click on the image, JQuery.png-->
+            <a href="https://jquery.com/"><img src="img/JQuery.png" alt="Jquery logo"></a>
+            <nav class="main_header_nav">
+                <ul>
+                  <!--all the navigation links to other web pages-->
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Example1.html">Example 1</a></li>
+                    <li><a href="Example2.html">Example 2</a></li>
+                    <li><a href="Example3.html">Example 3</a></li>
+                    <li><a href="Example4.html">Example 4</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="main_header_w3schools">
+            <!--This is the link to w3schools for jquery once you click on the image -->
+            <a href="https://www.w3schools.com/jquery/"><div class="main_header_w3schools_logo"></div></a>
+        </div>
+        
+    </header>
+  
+
+    
+    <div class="container">
+      <!--The following is the content in the container for example 1-->
+            <h2>Example 1: Explanation</h2>
+            <!--The first box in which an example is explained of the ticker animation-->
+            <div class="box1_example1">
+                
+                <p>A Ticker tape animation is generated using JQuery or JavaScripts.
+                  In example 1 on this page, the ticker tape animation is demonstrated and the code is shown.
+                  This type of animation is content that is continuously scrolling or updating content.
+                  <br><br>The content is scrolling in a "tape" or "row" format accross the webpage.
+                  This type of animation is advantageous to advertise certian products or will be used to display imporant
+                  information such as a news update. In conclusion, the information is continiuously scrolling horizontally
+                  across your sreen displaying information. 
+                  <br><br>How it is implemented into your code, is by created a 'div' tag, in which
+                  you create the contact you want to display in your 'tape'. 
+                  Therafter, you can creat a CSS style to design and control the easthetics of your ticker tape animation.
+                  <br><br>The Jquery code as shown below in example 2, will give the animation its interactivity.
+                  You can therfore control the speed of the information scrolling or create a start and stop button as show,
+                  in example 3 below. 
+                </p>
+            </div>
+
+            <h2>Example 1: The Code</h2>
+            <div class="box2_example1">
+              <!--The JQuary code for the ticker animation in box 2-->
+              <!--The code is wrapped in pre and code to specify in which language JS (JQuery), it must be higlighted. It gives the code its syntax colour.-->
+              <pre><code class="language-javascript"> 
+                $(document).ready(function() {
+                  let isRunning = false;
+                  const tickerContent = $(".ticker-content");
+                  
+                  
+                  function toggleTicker() {
+                    if (!isRunning) {
+                      tickerContent.css("animation-play-state", "running");
+                      $("#startStopButton").text("Stop");
+                    } else {
+                      tickerContent.css("animation-play-state", "paused");
+                      $("#startStopButton").text("Start");
+                    }
+                    isRunning = !isRunning;
+                  }
+                  
+                  
+                  $("#startStopButton").click(toggleTicker);
+                });
+                            </code></pre>
+                
+            </div>
+
+            <h2>Example 1: Display of the Code </h2>
+              <div class="box3_example1">
+                <script>
+                  $(document).ready(function() {
+                      let isRunning = false;
+                      const tickerContent = $(".ticker-content");
+                    
+                      // The function that is used to start or stop the ticker animation.
+                      function toggleTicker() {
+                        //This if statement if the animation is not running.
+                        if (!isRunning) {
+                          // The "animation-play-state" is set to "running" in order to start the animation.
+                          tickerContent.css("animation-play-state", "running");
+                          // The button text will changed to stop.
+                          $("#startStopButton").text("Stop");
+                        //else statement if the animation is running.
+                        } else {
+                          //The animation-play-state is set to paused(stop) in order to stop animation.
+                          tickerContent.css("animation-play-state", "paused");
+                          //the startStopButton will be changed to start.
+                          $("#startStopButton").text("Start");
+                        }
+                        // The value of the isRunning will alterante between true or false. Switch between two states.
+                        isRunning = !isRunning;
+                      }
+                    
+                      // The click event is attached to the start/stop button, to make it functional
+                      // When the button is clicked, the the id startStopButton above, the toggelTicker will be called.
+                      $("#startStopButton").click(toggleTicker);
+                  });
+              </script>
+                <div class="ticker-container">
+                  <!--The content that will display within the ticker animation-->
+                  <div class="ticker-content">
+                    Hallo!!! This is an example of the content displayed in a Ticker Tape &#x1F601 &#x1F601 &#x1F601 !!!
+                  </div>
+                  <!--The startStopButton to start or stop the ticker animation-->
+                  <button id="startStopButton">Stop</button>    
+              </div>
+            </div>
+            <!--The two reference tags to navigate between webpages-->
+            <!--The navigation class is styled in CSS as well as the a for the a href-->
+            <div class="navigation"> 
+              <a href="home.html">Previous</a>
+              <a href="Example2.html">Next</a>
+            </div>
+            
+            
+    </div>
+    <!--The button that will take the user back to the top-->
+    <button id="to_top_button">Back to Top</button>
+
+    <!-- The JQuary code for scrolling back to the top of the webpage -->
+    <script>
+        // the back to top button will hide or show based on your scrolling position.
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('#to_top_button').fadeIn();
+            } else {
+                $('#to_top_button').fadeOut();
+            }
+        });
+
+        // When the button is clicked, the user will be taken to the top of the webpage. 
+        $('#to_top_button').click(function() {
+            $('html, body').animate({ scrollTop: 0 }, 'slow');
+            return false;
+        });
+    </script>
+</body>
+</html>
+      
+</body>
+
+</html>
